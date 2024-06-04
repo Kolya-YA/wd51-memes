@@ -49,9 +49,11 @@ function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-blue-800">Meme generator</h1>
-      <TextInputs texts={texts} setTexts={setTexts} memeRef={memeRef} />
-      <NewMeme texts={texts} curImage={curImage} changeIndex={changeIndex} memeRef={memeRef} />
+      <h1 className="center text-3xl font-bold text-cyan-700 my-8">Meme generator</h1>
+      <div className='grid md:grid-cols-2 gap-8'>
+        <TextInputs texts={texts} setTexts={setTexts} memeRef={memeRef} />
+        <NewMeme texts={texts} curImage={curImage} changeIndex={changeIndex} memeRef={memeRef} />
+      </div>
       <LoadImage />
       <MemesGallery gallery={gallery} setCurIndex={setCurIndex} />
     </>

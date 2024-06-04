@@ -28,17 +28,23 @@ const TextInputs = ({ texts, setTexts, memeRef }) => {
 
     return (
         <div>
-            <h2>Text inputs</h2>
+            <h2 className="mb-4 text-2xl font-semibold">Write your new meme</h2>
             <form onSubmit={handleSave}>
-                <label>
-                    Top text:
-                    <input type="text" name="topText" onChange={handleText} value={texts?.topTexts} />
+                <label className="my-4 block">
+                    Top text
+                    <input type="text" name="topText" onChange={handleText} value={texts?.topTexts}
+                        className="block w-full mt-2 p-2 border border-gray-300 rounded-md"
+                        />
                 </label>
-                <label>
-                    Bottom text:
-                    <input type="text" name="bottomText" onChange={handleText} value={texts?.bottomTexts} />
+                <label className="block">
+                    Bottom text
+                    <input type="text" name="bottomText" onChange={handleText} value={texts?.bottomTexts}
+                        className="block w-full mt-2 p-2 border border-gray-300 rounded-md"
+                    />
                 </label>
-                <button>Save meme</button>
+                <button className="my-4 px-4 py-2 text-white bg-cyan-700 rounded shadow-md">
+                    Save meme
+                </button>
             </form>
         </div>
     )

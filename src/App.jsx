@@ -49,7 +49,7 @@ function App() {
 
   return (
     <>
-      <h1>Meme generator</h1>
+      <h1 className="text-3xl font-bold text-blue-800">Meme generator</h1>
       <TextInputs texts={texts} setTexts={setTexts} memeRef={memeRef} />
       <NewMeme texts={texts} curImage={curImage} changeIndex={changeIndex} memeRef={memeRef} />
       <LoadImage />

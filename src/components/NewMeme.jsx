@@ -9,7 +9,7 @@ const NewMeme = ({ texts, curImage, changeIndex, memeRef }) => {
         <div>
             <h2 className="mb-4 text-2xl font-semibold">New Meme</h2>
             <div ref={memeRef}
-                className="grid [grid-template-areas:'meme']
+                className="grid [grid-template-areas:'meme'] justify-center
                     relative isolate
                     p-4 bg-cyan-50 rounded-md"
             >

@@ -1,5 +1,6 @@
 import { toJpeg } from "html-to-image"
 import { useCallback } from "react"
+import LoadImage from "./LoadImage"
 
 const TextInputs = ({ texts, setTexts, memeRef }) => {
 
@@ -46,6 +47,8 @@ const TextInputs = ({ texts, setTexts, memeRef }) => {
                     Save meme
                 </button>
             </form>
+
+            <LoadImage />
         </div>
     )
 }

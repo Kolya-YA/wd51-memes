@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 import NewMeme from './components/NewMeme'
 import TextInputs from './components/TextInputs'
-import LoadImage from './components/LoadImage'
 import MemesGallery from './components/MemesGallery'
 
 
@@ -57,7 +56,6 @@ function App() {
         <TextInputs texts={texts} setTexts={setTexts} memeRef={memeRef} />
         <NewMeme texts={texts} curImage={curImage} changeIndex={changeIndex} memeRef={memeRef} />
       </div>
-      <LoadImage />
       <MemesGallery gallery={gallery} setCurIndex={setCurIndex} />
     </>
   )

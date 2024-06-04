@@ -2,6 +2,7 @@ const Thumbnail = ({ image, setCurIndex, idx }) => {
 
     const handleClick = (e) => {
         setCurIndex(e.currentTarget.getAttribute('data-idx'))
+        window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
     const tUrl = (fUrl) => {
@@ -12,7 +13,9 @@ const Thumbnail = ({ image, setCurIndex, idx }) => {
     }
 
     return (
-        <button onClick={handleClick} data-idx={idx}>
+        <button onClick={handleClick} data-idx={idx}
+            className=" bg-cyan-50 rounded shadow min-w-full min-h-full p-2 grid place-content-center "
+        >
             <img src={tUrl(image.url)} alt={image.name} loading="lazy" />
         </button>
   )

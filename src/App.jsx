@@ -6,7 +6,10 @@ import MemesGallery from './components/MemesGallery'
 
 
 function App() {
-  const [texts, setTexts] = useState({})
+  const [texts, setTexts] = useState({
+    topText: 'Ho-ho-ho! Top text?',
+    bottomText: 'Yo-yo! Bottom text!'
+  })
   const [gallery, setGallery] = useState([])
   const [curIndex, setCurIndex] = useState(-1)
   const [curImage, setCurImage] = useState(null)

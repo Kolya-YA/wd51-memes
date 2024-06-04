@@ -32,13 +32,13 @@ const TextInputs = ({ texts, setTexts, memeRef }) => {
             <form onSubmit={handleSave}>
                 <label className="my-4 block">
                     Top text
-                    <input type="text" name="topText" onChange={handleText} value={texts?.topTexts}
+                    <input type="text" name="topText" onChange={handleText} value={texts?.topText}
                         className="block w-full mt-2 p-2 border border-gray-300 rounded-md"
                         />
                 </label>
                 <label className="block">
                     Bottom text
-                    <input type="text" name="bottomText" onChange={handleText} value={texts?.bottomTexts}
+                    <input type="text" name="bottomText" onChange={handleText} value={texts?.bottomText}
                         className="block w-full mt-2 p-2 border border-gray-300 rounded-md"
                     />
                 </label>

@@ -19,7 +19,7 @@ const NewMeme = ({ texts, curImage, changeIndex, memeRef }) => {
                     {texts?.topText}
                 </p>
                 <img src={curImage?.url} alt={curImage?.name}
-                    className="[grid-area:meme]"
+                    className="max-h-[400px] [grid-area:meme]"
                 />
                 <p className="[grid-area:meme] absolute inset-x-0 bottom-0 z-10 h-12
                     bg-white/70 grid place-content-center font-mono text-xl text-cyan-700 font-bold
